@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-image: url(flat.avif);
+
+}
+
+.sempurna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin-right: 700px;
+    height: 800px;
+    width: 200px;
+    border-right: 2px solid;
+    color: blueviolet; 
+    box-shadow: 0 0 30px blueviolet;
+    line-height: 40px;
+    font-size: 20px;
+    right: 475px;
+    bottom: 1px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sempurna a{
+    font-family: fantasy;
+}
+
+.sempurna h2{
+    position: absolute;
+    margin-bottom: 400px;
+    margin-left: 68px;
+}
+
+.beta {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 0px;
+    height: 80px;
+    width: 1200px;
+    border-right: 2px solid;
+    color: blueviolet; 
+    box-shadow: 0 0 30px blueviolet;
+    line-height: 40px;
+    font-size: 20px;
+    left: 100px;
+    top: 1625px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sempurna:hover{
+    animation: animate 1s linear infinite
+}
+
+.beta:hover{
+    animation: animate 1s linear infinite
+}
+
+
+.wrapper{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: black;
+    box-shadow: 0 0 55px blueviolet;
+    border-radius: 20px;
+    padding: 40px;
+    top: 80px;
+    left: 500px;
+    overflow: hidden; 
+}
+
+.wrapper:hover{
+    animation: animate 1s linear infinite
+}
+
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+.wrapper.active .form.form{
+    transform: translateY(-450px);
+}
+
+.wrapper .lambda.lambda{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 10px;
+    left: 0px;
+}
+
+.wrapper.active .lambda.lambda{
+    transform: translateY(-450px);
+}
+
+
+h1{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.inputs{
+    position: relative;
+    margin: 30px;
+    color: white;
+    border-bottom: 2px solid;
+}
+
+.inputs label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputs input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.inputs input:focus~label,
+.inputs input:focus~label{
+    top: -5px;
+}
+
+.remember{
+    position: relative;
+    margin: -5px 0 15px 5px;
+    left: 26px;
+}
+
+.remember label{
+    color: white;
+    font-size: 14px;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    font-size: 16px;
+    counter-reset: black;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.signup{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signup p{
+    color: white;
+}
+
+.signup p a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.signup p a:hover{
+    text-decoration: underline;
+}
+
+.lambda{
+    transition: 1s ease-in-out;
+}
